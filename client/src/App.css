@@ -1,22 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Amaranth', sans-serif;
+
+}
+
 a {
     text-decoration: none;
     text-transform: uppercase;
     margin: 10px;
     padding: 10px;
+    display: inline-block;
 }
-
-
-
-/* #home .card {
-    border: 3px solid red;
-}
-
-#tea .card {
-    border: 3px solid blue;
-}
-
-.card {
-    padding: 10px;
-    width: 80%;
-    margin: 20px auto;
-} */

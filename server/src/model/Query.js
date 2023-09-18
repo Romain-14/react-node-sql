@@ -8,7 +8,6 @@ class Query {
     }
 
     static async findByValue(query, value){
-        console.log("QUERY", value)
         return await pool.query(query, value);
     }
 

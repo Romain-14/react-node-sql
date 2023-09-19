@@ -28,3 +28,26 @@ header img {
 header nav {
     padding: 15px;
 }
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;    
+    position: fixed;
+    width: 100px;
+    margin-left: 0;
+    padding-left: 0;
+    border: 1px solid #fff;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+    border-left: 0;
+    background-color: #879E0E;
+    color: #fff;
+}
+
+.cartIcon{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 10px;
+}

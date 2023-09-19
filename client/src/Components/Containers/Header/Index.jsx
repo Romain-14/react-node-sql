@@ -1,23 +1,30 @@
 import { useSelector } from "react-redux";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+
 import styles from "./Header.module.css";
 import logo from "./assets/img/logo.png";
 
 function Header() {
     const { info } = useSelector((state) => state.user);
     const { cartInfo } = useSelector((state) => state.cart);
-    console.log(cartInfo)
+
+    function computeCart(){
+        let sum = 0;
+        for (const tea of cartInfo.product) {
+            sum += tea.quantity * tea.priceEach;
+        }
+        return sum.toFixed(2);
+    }
+    
     return (
         <header>
-            <div>
-                {
-                    // ici le panier calculer PLUS accès route
-                    cartInfo.product.map(p => (
-                        <span key={p.ref}>{p.ref} |</span>
-                    ))
-                }
-            </div>
             <p>Livraison offerte à partir de 65€ d'achat</p>
+            <Link to={"/cart"} className={styles.cart}>
+                <FontAwesomeIcon icon={faCartShopping} className={styles.cartIcon}/>
+                {cartInfo.product.length ? computeCart() + "€" : "rien"} 
+            </Link>
             <img src={logo} alt="" width="310" height="90"/>
             <nav>
                 <NavLink to={"/"}>accueil</NavLink>

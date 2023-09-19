@@ -14,7 +14,7 @@ function Detail() {
     
     const [teas, setTeas] = useState(null);
     const [index, setIndex] = useState(0);
-
+    console.log(teas)
     useEffect(() => {
         async function getDatas() {
             try {
@@ -43,7 +43,7 @@ function Detail() {
             const newCart = {
                 product: [
                     ...cartInfo.product,
-                    { ref: teas[index].ref, quantity: 1 },
+                    { ref: teas[index].ref, quantity: 1, priceEach: parseFloat(teas[index].price) },
                 ],
                 buyer: info.id,
             };

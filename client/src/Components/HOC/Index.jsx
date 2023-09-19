@@ -18,6 +18,7 @@ function HOC({ child, auth }) {
     const Child = child;
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         const title = setTitle(pathname);
         document.title = title;
     }, [pathname]);

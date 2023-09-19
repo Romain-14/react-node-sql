@@ -1,6 +1,35 @@
-.card {
-    margin: 20px auto;
-    padding: 10px;
-    width: 80%;
-    border: 3px solid blue;
+.wrapper {
+    background-color: #fff;
+    padding: 50px 20px;
+    margin: 25px 0;
+}
+
+.wrapper article > img {
+    display: none;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.2rem;
+    color: #413f3f;
+}
+
+figure {
+    margin: 35px 0;
+}
+
+figure + p::first-letter {
+    text-transform: uppercase;
+}
+
+figure + p {
+    text-align: center;
+}
+
+figure + p span {
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 600px) {
 }

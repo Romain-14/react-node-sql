@@ -1,0 +1,17 @@
+.flex_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.wrapper {
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.price {
+    width: 100%;
+    text-align: center;
+}

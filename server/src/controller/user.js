@@ -10,7 +10,7 @@ const check_token = async (req, res) => {
     try {
         const queryUser = "SELECT label FROM user WHERE label = ?";
         await Query.findByValue(queryUser, req.params.label);
-        res.status(200).json({msg: "authentifié"})
+        res.status(200).json({msg: "authentifié", id: queryUser.label })
     } catch (error) {
         throw Error(error);
     }

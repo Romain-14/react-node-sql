@@ -8,7 +8,7 @@ class Query {
     }
 
     static async findByValue(query, value){
-        return await pool.query(query, value);
+        return await pool.query(query, [value]);
     }
 
     static async findByDatas(query, datas){

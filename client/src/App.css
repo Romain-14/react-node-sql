@@ -7,10 +7,16 @@
 html {
     font-size: 62.5%;
 }
-body{
-    font-size: 1.6rem;
-    font-family: 'Amaranth', sans-serif;
 
+body{
+    background-color: rgb(228, 224, 224);
+    font-size: 1.8rem;
+    font-family: 'Amaranth', sans-serif;    
+}
+
+pre {
+    font-size: 1.8rem;
+    font-family: 'Amaranth', sans-serif;
 }
 
 a {
@@ -19,4 +25,48 @@ a {
     margin: 10px;
     padding: 10px;
     display: inline-block;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-height: 100%;
+}
+
+main {
+    margin: 20px 0;     
+}
+
+.cta-tea {
+    background-color: #B09067;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    margin: auto;
+    width: fit-content;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 1px #000000;
+}
+
+.cta-cart {
+    margin: 10px auto;
+    padding: 10px;
+    border: 0; 
+    cursor: pointer   
+}
+
+/* HEADING */
+
+h2{
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+    color:#95AD23 ; 
+    text-shadow: 0px 0px 0.5px #000000;
+    letter-spacing: 2px;
 }

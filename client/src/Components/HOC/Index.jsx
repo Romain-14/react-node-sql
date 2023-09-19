@@ -13,6 +13,8 @@ function HOC({ child, auth }) {
     const [tokenIsValid, setTokenIsValid] = useState(false);
     const TOKEN = localStorage.getItem("auth");
 
+    // const cart = JSON.parse(localStorage.getItem("cart"));
+
     const Child = child;
 
     useEffect(() => {
@@ -30,11 +32,13 @@ function HOC({ child, auth }) {
                     const res = await fetch("/api/v1/user/check_token", {
                         headers: { Authentication: "Bearer " + TOKEN },
                     });
-                    if (res.status === 401) {
+                    if (res.status === 401) {                        
+                        localStorage.removeItem("auth")
                         dispatch(signout());
                         navigate("/");
                     }
                     if (res.status === 200) {
+                        const json = await res.json();
                         console.log("200");
                         setTokenIsValid(true);
                     }

@@ -1,0 +1,30 @@
+header{
+    background: url(./assets/img/bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+header nav a{
+    display: block;
+    text-align: center;
+    color: #fff;
+    margin: 7px 0;
+    text-shadow: 0px 0px 2px #000000;
+}
+
+header > p {
+    margin: 0;
+    padding: 10px;
+    background-color: #879E0E;
+    text-shadow: 0px 0px 2px #000000;
+    color: #fff;
+    text-align: center;
+}
+
+header img {
+    width: 60%;
+    margin: 20px auto;
+}
+
+header nav {
+    padding: 15px;
+}

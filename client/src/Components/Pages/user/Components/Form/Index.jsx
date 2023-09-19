@@ -31,6 +31,7 @@ function Form({ type }) {
 
         if(type === "in" && res.status === 200){
             localStorage.setItem("auth", json.TOKEN);
+            const cart = JSON.parse(localStorage.getItem("cart"));
             dispatch(signin({label}));
             navigate("/");
         }

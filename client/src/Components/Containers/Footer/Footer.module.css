@@ -1,0 +1,44 @@
+.footer_top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: #879E0E;
+    padding: 20px;
+}
+
+.footer_top p {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+.footer_bottom{
+    background-color: #96B011;
+}
+
+.footer_bottom nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer, footer a {
+    color: #fff;
+    text-shadow: 0px 0px 2px #000000;
+}
+
+footer a {
+    margin: 2px;
+    padding: 2px;
+    text-transform: initial;
+}
+
+footer h2 { 
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.icon {
+    text-align: center;
+}

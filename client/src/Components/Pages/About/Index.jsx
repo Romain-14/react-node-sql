@@ -1,5 +1,7 @@
 import amelie from "./assets/img/amelie.jpg";
+import mikeline from "./assets/img/amelie.jpg";
 import xavier from "./assets/img/xavier.jpg";
+
 import Wrapper from "./Components/Wrapper";
 import IconOne from "./IconOne";
 import Icons from "./Icons";
@@ -16,6 +18,7 @@ function About() {
 
                 <Wrapper image={amelie} title={"Amélie, fondatrice de Cup of Tea"} text={text.amelie}/>
                 <Wrapper image={xavier} title={"Xavier, fondateur de Cup of Tea"} text={text.xavier}/>
+                <Wrapper image={mikeline} title={"mikeline, l'alternante"} text={text.mikeline}/>
                                 
             </section>
 

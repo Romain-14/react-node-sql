@@ -9,7 +9,11 @@ function Wrapper({title, image, text}) {
             <img src={image} alt="" />
             {
                 Object.values(text).map((t, index) => {
-                    return <Text text={t} key={index}/> 
+                    return (
+                        <Text text={t} key={index}>
+                            <h2>partie n° {index + 1}</h2>
+                        </Text>
+                    )
                 })
             }
             

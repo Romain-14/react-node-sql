@@ -25,7 +25,7 @@ function App() {
                     <Route path="" element={<HOC child={Tea} index/>}/>
                     <Route path=":url_tea/:id" element={<HOC child={Detail} />}/>
                 </Route> 
-                <Route path="notre-histoire" element={<About />} />
+                <Route path="/notre-histoire" element={<About />} />
                 <Route path="/utilisateur">
                     <Route path="connexion" element={<Signin />} />
                     <Route path="votre-compte" element={<HOC child={Dashboard} auth={true}/>} />

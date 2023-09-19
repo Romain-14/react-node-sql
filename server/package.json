@@ -8,7 +8,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/src/index.js",
-    "build": "cd client && npm install && npm run build",
+    "build": "cd ../client && npm install && npm run build",
     "dev": "nodemon src/index.js"
   },
   "keywords": [],

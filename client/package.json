@@ -1,5 +1,6 @@
 {
     "proxy": "http://localhost:9000",
+    "homepage": "https://cup-of-tea.onrender.com",
     "name": "client",
     "version": "0.1.0",
     "private": true,

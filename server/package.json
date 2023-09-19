@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "engines": {"node": "16.13.2"},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js",
+    "start": "node server/src/index.js",
+    "build": "cd client && npm install && npm run build",
     "dev": "nodemon src/index.js"
   },
   "keywords": [],

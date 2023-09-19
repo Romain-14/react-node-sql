@@ -14,7 +14,7 @@ function Detail() {
     
     const [teas, setTeas] = useState(null);
     const [index, setIndex] = useState(0);
-    console.log(teas)
+    
     useEffect(() => {
         async function getDatas() {
             try {

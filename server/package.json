@@ -7,7 +7,7 @@
   "engines": {"node": "16.13.2"},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/src/index.js",
+    "start": "node src/index.js",
     "build": "cd ../client && npm install && npm run build",
     "dev": "nodemon src/index.js"
   },

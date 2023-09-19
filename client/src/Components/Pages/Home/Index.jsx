@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Loading from "../../Containers/Loading/Index";
 import Card from "../../Containers/Card/Index";
 
-import styles from "./Home.module.css"
+// import styles from "./Home.module.css"
 
 function Home() {
     const [categories, setCategories]     = useState(null);
@@ -78,7 +78,7 @@ function Home() {
 
     return (
         <main id="home">
-            <section className={styles.promo}>
+            <section className="{styles.promo}">
 
                 <h2>C'est noël, profitez-en !</h2>
             </section>

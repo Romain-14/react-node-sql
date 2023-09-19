@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "../Tea.module.css"
+import styles from "../tea.module.css"
 
 function Card({ tea }) {
     return (

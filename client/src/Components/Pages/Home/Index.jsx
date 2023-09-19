@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Loading from "../../Containers/Loading/Index";
 import Card from "../../Containers/Card/Index";
 
-import styles from "./Home.module.css"
+import styles from "./home.module.css"
 
 function Home() {
     const [categories, setCategories]     = useState(null);

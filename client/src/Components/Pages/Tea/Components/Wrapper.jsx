@@ -1,5 +1,5 @@
 import Card from "./Card";
-import styles from "../Tea.module.css";
+import styles from "../tea.module.css";
 
 function Wrapper({ datas }) {
     return (

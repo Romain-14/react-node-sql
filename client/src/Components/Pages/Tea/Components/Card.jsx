@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-// import styles from "../Tea.module.css"
+import styles from "../Tea.module.css"
 
 function Card({ tea }) {
     return (
-        <div className="{styles.card}">
+        <div className={styles.card}>
             <figure>
                 <figcaption>{tea.label_1}</figcaption>
                 <img src={"/img/tea/" + tea.url_image} alt="" />

@@ -1,9 +1,9 @@
 import Card from "./Card";
-// import styles from "../Tea.module.css";
+import styles from "../Tea.module.css";
 
 function Wrapper({ datas }) {
     return (
-        <div className="{styles.wrapper}">
+        <div className={styles.wrapper}>
             <article>
                 <img src={"/img/category/" + datas.category.url_image} alt="" />
                 <h2>{datas.category.label}</h2>

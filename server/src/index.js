@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(router);
 
 app.get("/*", (req, res) => {
-    res.sendFile("../client/build", "index.html");
+    res.sendFile("../client/build", "/index.html");
 });
 
 app.listen(PORT, () => console.log(`running on http://localhost:${PORT}`));

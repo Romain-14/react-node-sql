@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(router);
 
-app.get("*", (req, res) => {
+app.get("/*", (req, res) => {
     res.sendFile("../client/build", "index.html");
 });
 
